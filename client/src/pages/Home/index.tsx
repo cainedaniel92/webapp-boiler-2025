@@ -3,39 +3,105 @@ import { useTranslation } from 'react-i18next';
 import HomeLayout from '@/layouts/HomeLayout';
 import { registerNamespace } from '@/utils/registerNamespace';
 
+import logo from '@/assets/Webapp Boiler - Logo.png';
 import en from './translations/en.json';
 import es from './translations/es.json';
 import './HomePage.scss';
+
+type Step = {
+  title: string;
+  description: string;
+};
+
+type ResourceLink = {
+  label: string;
+  href: string;
+};
 
 registerNamespace('home', { en, es });
 
 const HomePage = () => {
   const { t } = useTranslation('home');
-  const instructionsValue = t('instructions', { returnObjects: true });
-  const instructions = Array.isArray(instructionsValue)
-    ? instructionsValue
-    : typeof instructionsValue === 'string'
-      ? [instructionsValue]
-      : [];
+
+  const stepsValue = t('steps', { returnObjects: true }) as unknown;
+  const steps: Step[] = Array.isArray(stepsValue)
+    ? (stepsValue as Step[])
+    : [];
+
+  const commandsValue = t('commands', { returnObjects: true }) as unknown;
+  const commands: string[] = Array.isArray(commandsValue)
+    ? (commandsValue as string[])
+    : [];
+
+  const linksValue = t('links', { returnObjects: true }) as unknown;
+  const links: ResourceLink[] = Array.isArray(linksValue)
+    ? (linksValue as ResourceLink[])
+    : [];
 
   return (
     <HomeLayout>
-      <section className="home-page">
+      <section className="home-page" id="kickoff">
         <header className="home-page__hero">
-          <h1>{t('title')}</h1>
-          <p>{t('intro')}</p>
+          <div className="home-page__logo-wrapper">
+            <img src={logo} alt={t('hero.title')} className="home-page__logo" />
+          </div>
+          <div className="home-page__hero-content">
+            <h1>{t('hero.title')}</h1>
+            <p className="home-page__subtitle">{t('hero.subtitle')}</p>
+            <p className="home-page__message">{t('hero.message')}</p>
+            <div className="home-page__hero-actions">
+              <a
+                className="home-page__button home-page__button--primary"
+                href="https://github.com/cainedaniel92/webapp-boiler-2025"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t('hero.ctaDocs')}
+              </a>
+              <a className="home-page__button" href="#kickoff">
+                {t('hero.ctaStart')}
+              </a>
+            </div>
+          </div>
         </header>
 
-        <ol className="home-page__checklist">
-          {instructions.map((instruction, index) => (
-            <li key={instruction}>
-              <span className="home-page__step">{index + 1}.</span>
-              <span>{instruction}</span>
-            </li>
-          ))}
-        </ol>
+        <section className="home-page__grid">
+          <article className="home-page__card">
+            <h2>{t('stepsHeading')}</h2>
+            <ul>
+              {steps.map((step) => (
+                <li key={step.title}>
+                  <h3>{step.title}</h3>
+                  <p>{step.description}</p>
+                </li>
+              ))}
+            </ul>
+          </article>
 
-        <p className="home-page__cta">{t('cta')}</p>
+          <article className="home-page__card">
+            <h2>{t('commandsHeading')}</h2>
+            <div className="home-page__command-list">
+              {commands.map((command) => (
+                <code key={command} className="home-page__command">
+                  {command}
+                </code>
+              ))}
+            </div>
+          </article>
+
+          <article className="home-page__card">
+            <h2>{t('linksHeading')}</h2>
+            <ul className="home-page__links">
+              {links.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </section>
       </section>
     </HomeLayout>
   );

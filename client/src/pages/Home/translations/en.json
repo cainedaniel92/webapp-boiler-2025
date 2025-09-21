@@ -1,12 +1,45 @@
 {
-  "title": "Welcome to the Boiler",
-  "intro": "This starter project is organised to help you ship front-end and back-end features quickly.",
-  "instructions": [
-    "Add new reusable UI to atoms, molecules, or organisms depending on complexity.",
-    "Compose page wrappers in layouts to define headers, navigation, and page chrome.",
-    "Create a page folder in pages/ with its own component, styles, and translations.",
-    "Extend or create skins to customise typography, colours, and theming.",
-    "Connect to the API server running on port 2000 for backend integrations."
+  "hero": {
+    "title": "Thanks for installing Webapp Boiler 2025",
+    "subtitle": "You're ready to launch a modern React + Express experience.",
+    "message": "We packed opinionated structure, theming, and testing helpers so you can focus on features. Tweak the settings below and make it yours.",
+    "ctaDocs": "Open documentation",
+    "ctaStart": "Start building"
+  },
+  "stepsHeading": "Kick-off checklist",
+  "steps": [
+    {
+      "title": "Review UI configuration",
+      "description": "Edit configuration/ui.config.json to choose the skin, theme mode, and supported languages that match your product."
+    },
+    {
+      "title": "Run both servers",
+      "description": "Use pnpm dev (or npm run dev) to start Vite on port 5173 and the Express API on port 2000."
+    },
+    {
+      "title": "Ship your first feature",
+      "description": "Add UI in components/pages and wire API routes in server/src/routes to bring your idea to life."
+    }
   ],
-  "cta": "Read the README to learn how to templatise this repository."
+  "commandsHeading": "Favourite commands",
+  "commands": [
+    "pnpm i",
+    "pnpm dev",
+    "npm run build"
+  ],
+  "linksHeading": "Helpful resources",
+  "links": [
+    {
+      "label": "Architecture overview",
+      "href": "https://github.com/cainedaniel92/webapp-boiler-2025/blob/main/docs/architecture.md"
+    },
+    {
+      "label": "UI customisation guide",
+      "href": "https://github.com/cainedaniel92/webapp-boiler-2025/blob/main/docs/ui-customisation.md"
+    },
+    {
+      "label": "Repository README",
+      "href": "https://github.com/cainedaniel92/webapp-boiler-2025"
+    }
+  ]
 }
