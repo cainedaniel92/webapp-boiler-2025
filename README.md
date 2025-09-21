@@ -45,4 +45,9 @@ Use `npm install` in the repository root to install all workspace dependencies. 
 2. Click **Use this template** to generate a new project, or run `gh repo create my-app --template you/webapp-boiler-2025`.
 3. Install dependencies and update the `README.md` with project-specific instructions.
 
+```bash
+npx degit cainedaniel92/webapp-boiler-2025 my-new-app
+pnpm i && pnpm dev
+```
+
 See `docs/architecture.md` for a high-level overview and `docs/ui-customisation.md` for theming/config notes.
