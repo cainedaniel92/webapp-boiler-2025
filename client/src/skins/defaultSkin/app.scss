@@ -1,0 +1,42 @@
+@use './variables';
+@use './mixins';
+@use './colors';
+@use './typography';
+@use './scaffolding';
+
+:root {
+  @include typography.base-fonts();
+  @include scaffolding.base-tokens();
+  @include colors.light-theme();
+}
+
+[data-theme='dark'] {
+  @include colors.dark-theme();
+}
+
+[data-skin='defaultSkin'] {
+  @include colors.light-theme();
+}
+
+[data-theme='dark'][data-skin='defaultSkin'] {
+  @include colors.dark-theme();
+}
+
+:focus-visible {
+  @include mixins.focus-ring();
+}
+
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  font-family: var(--font-family-base);
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

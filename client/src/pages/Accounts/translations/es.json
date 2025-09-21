@@ -1,0 +1,13 @@
+{
+  "title": "Cuentas",
+  "login": {
+    "title": "Iniciar sesión",
+    "cta": "Entrar",
+    "hint": "Usa esta vista como base para tus pantallas de autenticación."
+  },
+  "signup": {
+    "title": "Crear cuenta",
+    "cta": "Registrarse",
+    "hint": "Recopila datos de usuario aquí y conéctalos con los servicios backend."
+  }
+}

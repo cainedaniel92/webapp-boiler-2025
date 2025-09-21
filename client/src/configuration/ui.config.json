@@ -1,0 +1,22 @@
+{
+  "theme": {
+    "defaultMode": "light",
+    "defaultSkin": "defaultSkin",
+    "availableSkins": ["defaultSkin", "beigeSkin"],
+    "allowSystemPreference": true
+  },
+  "internationalization": {
+    "defaultLanguage": "en",
+    "fallbackLanguage": "en",
+    "supportedLanguages": ["en", "es"]
+  },
+  "layout": {
+    "header": {
+      "sticky": true
+    },
+    "content": {
+      "maxWidth": 1200,
+      "padding": "2rem"
+    }
+  }
+}

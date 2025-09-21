@@ -1,0 +1,13 @@
+{
+  "title": "Accounts",
+  "login": {
+    "title": "Log in",
+    "cta": "Sign in",
+    "hint": "Use this view as the basis for your authentication screens."
+  },
+  "signup": {
+    "title": "Create account",
+    "cta": "Sign up",
+    "hint": "Collect user details here and hook into backend services."
+  }
+}

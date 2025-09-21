@@ -1,0 +1,25 @@
+@mixin light-theme {
+  --color-background: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f0f4ff;
+  --color-surface-hover: rgba(59, 130, 246, 0.1);
+  --color-border: #d9e1f2;
+  --color-border-muted: #c7d2f0;
+  --color-text: #1f2937;
+  --color-text-muted: #64748b;
+  --color-accent: #2563eb;
+  --color-on-accent: #ffffff;
+}
+
+@mixin dark-theme {
+  --color-background: #0f172a;
+  --color-surface: #111c34;
+  --color-surface-secondary: #15213f;
+  --color-surface-hover: rgba(96, 165, 250, 0.16);
+  --color-border: #1e2b4d;
+  --color-border-muted: #24365f;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-accent: #60a5fa;
+  --color-on-accent: #0b1120;
+}

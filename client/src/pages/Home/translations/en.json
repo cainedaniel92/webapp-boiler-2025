@@ -1,0 +1,12 @@
+{
+  "title": "Welcome to the Boiler",
+  "intro": "This starter project is organised to help you ship front-end and back-end features quickly.",
+  "instructions": [
+    "Add new reusable UI to atoms, molecules, or organisms depending on complexity.",
+    "Compose page wrappers in layouts to define headers, navigation, and page chrome.",
+    "Create a page folder in pages/ with its own component, styles, and translations.",
+    "Extend or create skins to customise typography, colours, and theming.",
+    "Connect to the API server running on port 2000 for backend integrations."
+  ],
+  "cta": "Read the README to learn how to templatise this repository."
+}

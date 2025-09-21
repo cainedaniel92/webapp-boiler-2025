@@ -1,0 +1,24 @@
+{
+  "app": {
+    "title": "Webapp Boilerplate",
+    "tagline": "Kickstart your next project faster."
+  },
+  "navigation": {
+    "home": "Home",
+    "accounts": "Accounts"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "footer": {
+    "madeWith": "Made with React, Sass, and Express",
+    "instructions": "Swap this footer with your project details."
+  }
+}

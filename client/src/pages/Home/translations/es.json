@@ -1,0 +1,12 @@
+{
+  "title": "Bienvenido a la plantilla",
+  "intro": "Este proyecto base está organizado para ayudarte a lanzar funciones front-end y back-end rápidamente.",
+  "instructions": [
+    "Agrega nuevas piezas reutilizables en átomos, moléculas u organismos según su complejidad.",
+    "Crea envoltorios de página en layouts para definir cabeceras, navegación y estructura.",
+    "Crea una carpeta de página en pages/ con su componente, estilos y traducciones.",
+    "Extiende o crea skins para personalizar tipografías, colores y temas.",
+    "Conéctate al servidor API que se ejecuta en el puerto 2000 para integraciones backend."
+  ],
+  "cta": "Lee el README para aprender cómo convertir este repositorio en plantilla."
+}

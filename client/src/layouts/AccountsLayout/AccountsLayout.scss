@@ -1,0 +1,25 @@
+.accounts-layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+
+  &__sidebar {
+    background: var(--color-surface-secondary);
+    border: 1px solid var(--color-border-muted);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  &__content {
+    background: var(--color-surface);
+    border-radius: 1rem;
+    border: 1px solid var(--color-border-muted);
+    padding: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}

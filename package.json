@@ -1,0 +1,28 @@
+{
+  "name": "webapp-boiler-2025",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=client && npm run build --workspace=server",
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\"",
+    "lint": "npm run lint --workspace=client && npm run lint --workspace=server",
+    "test": "npm run test --workspace=client && npm run test --workspace=server",
+    "lint:fix": "npm run lint --workspace=client -- --fix && npm run lint --workspace=server -- --fix",
+    "format": "prettier \"**/*.{ts,tsx,js,jsx,json,scss,md}\" --write",
+    "stop": "npm run stop --workspace=client && npm run stop --workspace=server",
+    "client:start": "npm run dev --workspace=client",
+    "client:stop": "npm run stop --workspace=client",
+    "server:start": "npm run dev --workspace=server",
+    "server:stop": "npm run stop --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "kill-port": "^2.0.1",
+    "prettier": "^3.3.3"
+  }
+}

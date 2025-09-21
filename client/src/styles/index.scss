@@ -1,0 +1,34 @@
+@use '../skins/defaultSkin/app' as defaultSkin;
+@use '../skins/beigeSkin/app' as beigeSkin;
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
