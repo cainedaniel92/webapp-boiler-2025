@@ -2,6 +2,8 @@
 
 A React + Node.js starter template with opinionated structure for front-end and back-end projects. The template ships with a granular component architecture, layout system, theming via Sass skins, and an Express API server.
 
+<img width="2048" height="1020" alt="image" src="https://github.com/user-attachments/assets/8641a87f-2ae7-4cb5-862a-6b54c8535342" />
+
 ## Workspaces
 
 - `client` — Vite + React + TypeScript + Sass + i18next.
